@@ -1,8 +1,7 @@
 import turtle
 
-my_turtle = turtle.Turtle
-
-
+my_turtle = turtle.Turtle()
+screen = turtle.Screen()
 
 num_sides = int(input("Number of sides of your shape?:"))
 my_turtle.color("purple")
@@ -17,8 +16,10 @@ for s in [angle]*num_sides:
 
 
 my_turtle.color("red")
-up()
-left(70)
+my_turtle.up()
+my_turtle.left(70)
+
+my_turtle.up(length)
 
 
 window.exitonclick()

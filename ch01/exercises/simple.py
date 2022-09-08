@@ -15,7 +15,7 @@ rate = float(input("What is the current rate from Euro to the American Dollar?:"
 print(rate, "That was the rate you entered")
 
 float(input("Would you like to re-enter the current rate?:"))
-
+#a while loop, won't work otherwise
 amount = float(input("Please input the amount to exchange:"))
 result = (rate * amount) - 3
 print("You have recieved back $", result, "back")
