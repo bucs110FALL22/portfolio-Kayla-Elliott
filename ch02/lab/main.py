@@ -11,7 +11,7 @@ print("Cost per week:", cost_per_week)
 
 cost_per_class = (cost_per_week / classes_per_week) 
 
-print("Wow, each of your classes costs" , cost_per_class , "per class??? That's a lot of money added up!") 
+print("Wow, each of your classes costs" , cost_per_class , "per class?? That's a lot of money added up!") 
 
 print(weeks, type(weeks))
 print(classes, type(classes))
@@ -26,7 +26,7 @@ print(cost_per_class, type(cost_per_class))
 
 fruit_snacks = ["red", "orange", "yellow" , "green", "purple"] 
 
-print(random.choice(fruit_snacks))
+print("Your fruit snacks are" , random.choice(fruit_snacks))
 
 
 
