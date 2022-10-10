@@ -5,28 +5,65 @@ import random
 window = turtle.Screen() # 2.  Create a screen
 window.bgcolor('lightblue')
 # how to create 
-
-
-
 turguy = turtle.Turtle()
 turguy.color('Blue')
 turguy.shape('turtle')
 
-turguy.down()
 
+window_width = 250
+window_height = 250
+
+
+distance = 10
+angle = 90
+is_on_screen = True
+
+colors = ["Red","Green","Purple"]
 
 turguy.goto(0,0)
 
-while True:  #so here is where i put the statment to keep the turtle in the screen?
-  coin = random.randint(1,2)
-  if coin == 1:
-    heads = turguy.left(90) 
-    turguy.forward(50)
+while is_on_screen:  #so here is where i put the statment to keep the turtle in the screen?
+  coin = random.randint(0,1)
+  if coin == 0:
+   turguy.left(angle) 
+   turguy.forward(distance)
 
-  elif coin == 2:
-   tails = turguy.right(90) 
-   turguy.forward(50)
+  else:
+   turguy.right(angle) 
+   turguy.forward(distance)
 
+
+   turtX = turguy.xcor()
+   turtY = turguy.ycor()
+
+   x_range = window.window_width()/2
+   y_range = window.window_height()/2 
+
+
+   turguy.color(colors[0])
+
+
+   colors.append(colors.pop(0))
+   if abs(turtX) > x_range or abs(turtY) > y_range:
+     is_in_screen = False 
+
+     window.bgcolor("Yellow")
+
+
+
+   if turtX > window_width:
+     turguy.goto(0,0)
+
+   if turtY > window_height:
+     turguy.goto(0,0)
+     
+
+
+
+    
+window.exitonclick()
+    
+    
 
 
 
