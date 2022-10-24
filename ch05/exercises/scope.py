@@ -1,5 +1,7 @@
 # was i suposed to use a command for the exponent and multplication? having problems with the squares
 
+#put all of the def within a def and all of teh variavles out of it
+
 def multy(numb1 = 0, numb2 = 0):
  #result = numb1 * numb2
  #print(result, "is your result")
@@ -35,7 +37,7 @@ print(bolo, "is your result")
 
 def square(single = 0):
   return (expo(single, 2))
-  
+  # return (multy(single, single))
 
 
 
